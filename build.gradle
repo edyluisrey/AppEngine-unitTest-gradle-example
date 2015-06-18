@@ -22,6 +22,10 @@ dependencies {
 	appengineSdk "com.google.appengine:appengine-java-sdk:${appengineVersion}"
 	compile "javax.servlet:servlet-api:2.5"
 	compile "com.google.appengine:appengine-api-1.0-sdk:${appengineVersion}"
+   
+    testCompile 'junit:junit:4.+'
+    testCompile "org.mockito:mockito-core:1.+"
+   
 }
 
 appengine {
@@ -35,4 +39,23 @@ appengine {
 		noCookies = true
 		oauth2 = true
     }
+}
+
+sourceSets {
+  main {
+    java {
+      srcDir 'src/main'
+    }
+    resources {
+      srcDir 'src'
+    }
+  }
+  test {
+    java {
+      srcDir 'test'
+    }
+    resources {
+      srcDir 'test'
+    }
+  }
 }
