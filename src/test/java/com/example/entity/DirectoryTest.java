@@ -17,14 +17,14 @@ public class DirectoryTest {
 	
 	@Test
 	public void testSetEmail() {
-		directory.setEmail("edy.aguirre@tallertechnologies.com");
-		assertTrue(directory.getEmail() == "edy.aguirre@tallertechnologies.com");  
+		directory.setEmail("eaguirre378@gmail.com");
+		assertTrue(directory.getEmail() == "eaguirre378@gmail.com");  
 	}
     
 	@Test
 	public void testGetEmail() {
-		directory.setEmail("edy.aguirre@tallertechnologies.com");
-		assertTrue(directory.getEmail()=="edy.aguirre@tallertechnologies.com");
+		directory.setEmail("eaguirre378@gmail.com");
+		assertTrue(directory.getEmail()=="eaguirre378@gmail.com");
 	}
 	
 	@Test
